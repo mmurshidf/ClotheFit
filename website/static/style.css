@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: 'Mont';
+    src: url(../static/Mont.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mont', sans-serif;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: #545454;
+}
+a.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #d9d9d9;
+    padding: 0 3px 0px 3px;
+    margin:0 2px 0px 5px;
+    line-height: 80px;
+    border-radius: 3px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+nav ul li a{
+    color: #d9d9d9;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 17px;
+}
+a.active,a:hover{
+    transition: .25s;
+    background: #d9d9d9;
+    color: #737373
+}
+.checkbtn{
+    color: #d9d9d9;
+    font-size: 20px;
+    line-height: 80px;
+    float: right;
+    margin-right: 23px;
+    cursor: pointer;
+    display: none;
+    border-radius: 3px;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px !important;
+        padding-left: 50px !important;
+    }
+    nav ul li a{
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block !important;
+    }
+    ul{
+        position: fixed !important;
+        width: 100% !important;
+        height: 100vh !important;
+        background: #737373 !important;
+        top: 80px !important;
+        left: -100% !important;
+        text-align: center !important;
+        transition: all .5s !important;
+    }
+    nav ul li{
+        display: block !important;
+        margin: 50px 0 !important;
+        line-height: 30px !important;
+    }
+    nav ul li a{
+        font-size: 20px !important;
+    }
+    a:hover,a.active{
+        border: none !important;
+        color: #545454 !important;
+    }
+    #check:checked ~ ul{
+        left: 0 !important;
+    }
+}

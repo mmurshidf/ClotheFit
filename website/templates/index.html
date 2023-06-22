@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <title>ClotheFit</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="slide_logo">Menu</i>
+      
+    </label>
+    <a class="logo" href="/">ClothesFit</a>
+    <ul>
+      {% if user.is_authenticated %}
+      <li><a href="/home">Home</a></li>
+      <li><a href="/logout">Logout</a></li>
+      {% else %}
+      <li><a href="/home">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/sign-up">Sign Up</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</body>
+</html>

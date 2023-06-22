@@ -1,2 +1,3 @@
-# ClotheFit
-A clothing WebApp, with potential to expand to an Android app and/or IOS app, that allows users to store their wardrobe and to pick outfits. Potentially will become a store or a platform for users to share/borrow/buy/sell outfits.
+# Webapp-navigation-bar-log-in-template
+
+This is a tenplate of a website. It features a navigation bar, a simple welcome page, and a logout/login/sign up feauture with a database!
