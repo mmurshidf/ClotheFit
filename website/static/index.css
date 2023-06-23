@@ -43,7 +43,7 @@ header > #Content > p{
     top: 17em;
     right:5em;
 }
-.Join{
+#join2{
     margin-left: 20%;
     margin-right: 70%;
     padding-top: 5px;
@@ -61,10 +61,10 @@ header > #Content > p{
     background-color: #2f261d;
     text-align: center;
     text-transform: uppercase;
-    color: #d9d9d9;
     border-radius: 5px;
+    color: #d9d9d9;
 }
-.Join:hover, .Join:focus, .Join:active{
+#join2:hover, #join2:focus, #join2:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

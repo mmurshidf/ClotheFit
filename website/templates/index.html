@@ -34,14 +34,16 @@
     </div>
   </header>
   <div>
-    <img class="hanger" src="{{ url_for('static', filename='hanger2.png')}}" alt="hanger2">
+    <img class="hanger" src="{{url_for('static', filename='hanger2.png')}}" alt="hanger2">
   </div>
-  <div class="Join">
-    {% if user.is_authenticated %}
-      <li><a href="/home">Join Now!</a></li>
-    {% else %}
-      <li><a href="/login">Join Now!</a></li>
-    {% endif %}
+  <div class="join">
+    <ul>
+      {% if user.is_authenticated %}
+      <li><a id="join2" href="/home">Join!</a></li>
+      {% else %}
+      <li><a id="join2" href="/login">Join!</a></li>
+      {% endif %}
+    </ul>
   </div>
 </body>
 </html>
