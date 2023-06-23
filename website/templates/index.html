@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
   <title>ClotheFit</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
       <i class="slide_logo">Menu</i>
       
     </label>
-    <a class="logo" href="/">ClothesFit</a>
+    <a class="logo" href="/">ClotheFit</a>
     <ul>
       {% if user.is_authenticated %}
       <li><a href="/home">Home</a></li>
@@ -25,5 +26,22 @@
       {% endif %}
     </ul>
   </nav>
+  <header id="Hook">
+    <div id="Content">
+      <h1>ClotheFit: Your Ultimate Wardrobe Companion!</h1>
+      <h2></h2>
+      <p style="line-height: 2;">Revolutionize your wardrobe with our platform. Store, organize, and categorize your clothes and shoes by cleanliness, type, and season. Effortlessly access your best outfits, saving valuable time. Elevate your style effortlessly!</p>
+    </div>
+  </header>
+  <div>
+    <img class="hanger" src="{{ url_for('static', filename='hanger2.png')}}" alt="hanger2">
+  </div>
+  <div class="Join">
+    {% if user.is_authenticated %}
+      <li><a href="/home">Join Now!</a></li>
+    {% else %}
+      <li><a href="/login">Join Now!</a></li>
+    {% endif %}
+  </div>
 </body>
 </html>

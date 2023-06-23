@@ -1,151 +1,100 @@
+@font-face {
+    font-family: 'Mont';
+    src: url(../static/Mont.otf);
+}
+@font-face {
+    font-family: 'Open';
+    src: url(../static/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 *{
     margin:0;
     padding:0;
 }
-body {
-    margin:0;
+body{
+    background-color: #e9e9e9;
+}
+Header{
+    Min-height: 100%;
+    width: 100%;
+}
+header > #Content{
+    text-align: left;
+    margin-left: 5%;
+}
+header > #Content > h1{
+    padding-top: 1em;
+    padding-right: 1em;
+    font-family: 'Mont';
+    font-size: 60px;
+}
+header > #Content > p{
+    padding-top: 1em;
+    width: 50%;
+    font-family: 'Open';
+    font-weight: bold;
     font-size: 17px;
-    line-height:1.6;
+    display: inline-block;
 }
-#Hook {
-    background-image: url('../static/gym.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 88.75vh;
-    color: white;
-    display:flex;
-    flex-direction:column;
+.hanger{
+    width:40%;
+    float:right;
+    margin-right: 5%;
+    position: absolute;
+    top: 17em;
+    right:5em;
+}
+.Join{
+    margin-left: 20%;
+    margin-right: 70%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 8%;
+    padding-bottom: 10px;
+    display:inline-block;
+    height: 3em;
+    width: 8ems;
     justify-content: center;
     align-items: center;
-    padding:0 20px;
-}
-#Content {
-    height: 88.75vh;
-    color: white;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding:0 20px;
-    text-align: center;
-}
-#Content h1{
-    font-size: 50px;
-    line-height: 1.2;;
-}
-
-#Content p{
-    font-size: 20px;
-}
-
-#Content a{
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    border: white 3px solid;
-    padding:10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-#Content a:hover{
-    background: gray;
-    transition: .25s;
-    color: white;
-}
-.after {
-    background-color: #00A693;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-}
-.after h2{
-    color: black;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding:20px 0 20px 0;
-    text-align: center;
-    text-decoration: underline;
-}
-.insa {
     display: flex;
+    font-family: 'Mont';
+    background-color: #2f261d;
     text-align: center;
-    color:white;
+    text-transform: uppercase;
+    color: #d9d9d9;
+    border-radius: 5px;
 }
-.ins h3{
-    text-decoration: underline;
+.Join:hover, .Join:focus, .Join:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.ins {
-    text-align: center !important;
-    width: 300px !important;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3) !important;
-    padding: 20px !important;
-    padding-top: 30px !important;
-    margin: 2% auto 0 !important;
-    border-radius: 10px !important;
-    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+@media(min-width: 1000px){
+    .hanger{
+        width:40%;
+        float:right;
+        margin-right: 5%;
+        position: absolute;
+        top: 20em;
+        right:2em;
+    }
 }
-#ins_a{
-    background-image:url('../static/Workoutpic.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 2px black solid;
-}
-#ins_b{
-    background-image:url('../static/score.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 2px black solid;
-}
-#ins_c{
-    background-image:url('../static/dumbbell.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 2px black solid;
-}
-.note {
-    color: black;
-    display:flex;
-    flex-direction:column;
-    background: white;
-    justify-content: center;
-    align-items: center;
-    padding:20px 0 20px 0;
-}
-.note p{
-    padding: 10px;
-}
-.note h2{
-    text-decoration: underline;
-}
-.warn {
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
-}
-footer {
-    background: #2F4F4F;
-    background-size: cover;
-    background-position: center;
-    height: 15vh;
-    color: white;
-}
-.footer {
-    color: white;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding:20px 0 20px 0;
-    text-align: center;
-    font-family: sans-serif;
-}
-.footer h3{
-    font-size: 15px;
-}
-.footer h4{
-    font-size: 10px;
+@media(max-width: 600px){
+    header > #Content{
+        margin-left: 2%;
+    }
+    header > #Content > h1{
+        padding-top: 1em;
+        padding-right: 1em;
+        font-family: 'Mont';
+        font-size: 40px;
+    }
+    header > #Content > p{
+        text-align: center;
+        padding-top: 1em;
+        width: 80%;
+        font-family: 'Open';
+        font-weight: bold;
+        font-size: 15px;
+    }
 }
