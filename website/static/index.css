@@ -52,10 +52,13 @@ nav{
     background-color: #d9d9d9;
     overflow: hidden;
 }
-.main > h1{
+.main > .h22{
     font-family: 'Mont';
     font-size: 40px;
     padding-bottom: 10px;
+}
+.main > .h11{
+    display: none;
 }
 .main > p{
     font-family: 'Open';
@@ -162,4 +165,131 @@ footer > ul > li{
     color: #d9d9d9;
     font-family: 'Mont';
     margin-left: 2px;
+}
+@media screen and (min-width: 1000px){
+    .navitems{
+        display: contents;
+    }
+    .steps{
+        min-width: 100%;
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: none;
+    }
+    .box1{
+        min-height: 400px;
+        background-color: #F5F5DC;
+        border-color: #97765d;
+        border-style: solid;
+    }
+    .box2{
+        min-height: 400px;
+        background-color: #EFDECD;
+        border-color: #97765d;
+        border-top-style: solid;
+        border-bottom-style: solid;
+    }
+    .box3{
+        min-height: 400px;
+        background-color: #FFE4C4;
+        border-color: #97765d;
+        border-style: solid;
+    }
+    .menu{
+        display: none;
+    }
+    .main > .h22{
+        display: none;
+    }
+    .main{
+        Min-height: 100%;
+        width: auto;
+        text-align: left;
+        padding-top: 2em;
+        padding-right: 1em;
+        padding-bottom: 8%;
+    }
+    .main > .h11{
+        display:contents;
+        padding-right: 1em;
+        font-family: 'Mont';
+        font-size: 60px;
+    }
+    .main > p{
+        padding-top: 10px;
+        padding-bottom: 0;
+        width: 50%;
+        font-family: 'Open';
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .hanger{
+        width:40%;
+        float:right;
+        margin-right: 5%;
+        position: absolute;
+        top: 17em;
+        right:5em;
+    }
+    .join2{
+        font-size: 30px;
+        font-weight: bold;
+        color: #d9d9d9;
+        margin-left: 5%;
+        text-decoration: none;
+        padding: 1% 5% 1% 5%;
+        background-color: #2f261d;
+        border-radius: 5px;
+        margin-top: 10%;
+    }
+    .join2:hover, .join2:focus, .join2:active{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .footer2{
+        background-color: #2f261d;
+        font-size: 10px;
+        padding:2% 0 2% 0;
+        float:left;
+        color: #d9d9d9;
+        font-family: 'Mont';
+        margin-left: 5px;
+    }
+    .footer2{
+        background-color: #2f261d;
+        font-size: 10px;
+        padding:0.5% 0 2% 0;
+        float:left;
+        color: #d9d9d9;
+        font-family: 'Mont';
+        margin-left: 2px;
+    }
+    nav{
+        align-items: center;
+        margin-right: 5%;
+        font-family: 'Mont';
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .navitems{
+        display: inline-flex;
+        list-style: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .stuff{
+        text-decoration: none;
+        color: #d9d9d9;
+        margin-left: 50px;
+    }
+    .stuff.active,.stuff:hover{
+        transition: .3s;
+        text-decoration: underline;
+        color: #97765d;
+    }
+    .stuff:hover,.stuff.active{
+        border: none !important;
+        color:#97765d;
+    }
 }
