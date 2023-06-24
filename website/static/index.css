@@ -115,12 +115,17 @@ nav{
 .box2 > h2{
     text-align: center;
     font-family: 'Open';
-    padding-top: 10%;
+    margin-top: 10%;
 }
 .box3 > h2{
     text-align: center;
     font-family: 'Open';
     margin-top: 10%;
+}
+.hanger2{
+    width: 100%;
+    float: center;
+    padding: 10px;
 }
 footer{
     text-align: center;
@@ -181,6 +186,9 @@ footer > ul > li{
         background-color: #F5F5DC;
         border-color: #97765d;
         border-style: solid;
+        flex:1;
+        margin: 2px;
+        padding: 10px;
     }
     .box2{
         min-height: 400px;
@@ -188,12 +196,18 @@ footer > ul > li{
         border-color: #97765d;
         border-top-style: solid;
         border-bottom-style: solid;
+        flex:1;
+        margin: 2px;
+        padding: 10px;
     }
     .box3{
         min-height: 400px;
         background-color: #FFE4C4;
         border-color: #97765d;
         border-style: solid;
+        flex:1;
+        margin: 2px;
+        padding: 10px;
     }
     .menu{
         display: none;
