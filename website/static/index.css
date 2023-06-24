@@ -7,94 +7,157 @@
     src: url(../static/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 *{
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
 }
 body{
-    background-color: #e9e9e9;
-}
-Header{
-    Min-height: 100%;
+    background-color: #2f261d;
     width: 100%;
 }
-header > #Content{
-    text-align: left;
-    margin-left: 5%;
-}
-header > #Content > h1{
-    padding-top: 1em;
-    padding-right: 1em;
+nav{
+    height: 12%;
+    align-items: center;
+    margin-right: 5%;
     font-family: 'Mont';
-    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
-header > #Content > p{
-    padding-top: 1em;
-    width: 50%;
-    font-family: 'Open';
+.logo{
+    font-size: 30px;
     font-weight: bold;
-    font-size: 17px;
-    display: inline-block;
+    color: #d9d9d9;
+    margin-left: 5%;
+    text-decoration: none;
+}
+.navitems{
+    display:none;
+    float:right;
+}
+.logo.active,.logo:hover{
+    transition: .3s;
+    text-decoration: underline;
+    color: #97765d;
+}
+.logo:hover,.logo.active{
+    border: none !important;
+    color:#97765d;
+}
+.menu{
+    width: 60px;
+    float:right;
+}
+.main{
+    text-align: center;
+    padding: 10%;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+.main > h1{
+    font-family: 'Mont';
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.main > p{
+    font-family: 'Open';
+    padding-bottom: 20%;
 }
 .hanger{
-    width:40%;
-    float:right;
-    margin-right: 5%;
-    position: absolute;
-    top: 17em;
-    right:5em;
+    width: 100%;
+    padding-bottom: 20%;
 }
-#join2{
-    margin-left: 20%;
-    margin-right: 70%;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin-top: 8%;
-    padding-bottom: 10px;
-    display:inline-block;
-    height: 3em;
-    width: 8ems;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: 'Mont';
-    background-color: #2f261d;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
+.join2{
+    font-size: 30px;
+    font-weight: bold;
     color: #d9d9d9;
+    text-decoration: none;
+    padding: 5% 20% 5% 20%;
+    background-color: #2f261d;
+    border-radius: 5px;
+    display:inline-block;
+    font-family: 'Mont';
+    text-transform: uppercase;
 }
-#join2:hover, #join2:focus, #join2:active{
+.join2:hover, .join2:focus, .join2:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-@media(min-width: 1537px){
-    .hanger{
-        width:40%;
-        float:right;
-        margin-right: 5%;
-        position: absolute;
-        top: 30em;
-        right: 0.25em;
-    }
+.steps{
+    width: 100%;
 }
-@media(max-width: 600px){
-    header > #Content{
-        margin-left: 2%;
-    }
-    header > #Content > h1{
-        padding-top: 1em;
-        padding-right: 1em;
-        font-family: 'Mont';
-        font-size: 40px;
-    }
-    header > #Content > p{
-        text-align: center;
-        padding-top: 1em;
-        width: 80%;
-        font-family: 'Open';
-        font-weight: bold;
-        font-size: 15px;
-    }
+.box1{
+    min-height: 400px;
+    background-color: #F5F5DC;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #97765d;
+}
+.box2{
+    min-height: 400px;
+    background-color: #EFDECD;
+    border-color: #97765d;
+}
+.box3{
+    min-height: 400px;
+    background-color: #FFE4C4;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #97765d;
+}
+.box1 > h2{
+    text-align: center;
+    font-family: 'Open';
+    margin-top: 10%;
+}
+.box2 > h2{
+    text-align: center;
+    font-family: 'Open';
+    padding-top: 10%;
+}
+.box3 > h2{
+    text-align: center;
+    font-family: 'Open';
+    margin-top: 10%;
+}
+footer{
+    text-align: center;
+    padding-bottom: 5%;
+    background-color: #97765d;
+}
+footer > h1{
+    padding: 10% 10% 0 10%;
+    font-family: 'Mont';
+    color:#d9d9d9;
+    font-size: 2.5rem;
+}
+footer > ul > li{
+    display: inline-flex;
+    font-family: 'Mont';
+    margin-right: 10px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.foot{
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 13px;
+}
+.foot.active,.foot:hover{
+    transition: .3s;
+    text-decoration: underline;
+    color: #2f261d;
+}
+.foot:hover,.foot.active{
+    border: none !important;
+    color:#2f261d;
+}
+#foot1{
+    margin-left: 10px;
+}
+.footer2{
+    background-color: #2f261d;
+    font-size: 5px;
+    padding:2% 0 2% 0;
+    float:left;
+    color: #d9d9d9;
 }

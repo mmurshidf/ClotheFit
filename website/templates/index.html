@@ -3,52 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
   <title>ClotheFit</title>
 </head>
 <body>
-<section>
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="slide_logo">Menu</i>
-      
-    </label>
+  <nav class="navbar">
     <a class="logo" href="/">ClotheFit</a>
-    <ul>
-      {% if user.is_authenticated %}
-      <li><a href="/home">Home</a></li>
-      <li><a href="/logout">Logout</a></li>
-      {% else %}
+    <ul class="navitems">
       <li><a href="/home">Home</a></li>
       <li><a href="/login">Login</a></li>
       <li><a href="/sign-up">Sign Up</a></li>
-      {% endif %}
     </ul>
+    <img class="menu" src="{{url_for('static', filename='hanger2.png')}}" alt="hanger2">
   </nav>
-  <header id="Hook">
-    <div id="Content">
-      <h1>ClotheFit: Your Ultimate Wardrobe Companion!</h1>
-      <h2></h2>
-      <p style="line-height: 2;">Revolutionize your wardrobe with our platform. Store, organize, and categorize your clothes and shoes by cleanliness, type, and season. Effortlessly access your best outfits, saving valuable time. Elevate your style effortlessly!</p>
-    </div>
-  </header>
-  <div>
-    <img class="hanger" src="{{url_for('static', filename='hanger2.png')}}" alt="hanger2">
+  <div class="main">
+    <h1>ClotheFit</h1>
+    <p style="line-height: 2;">Revolutionize your wardrobe with our platform. Store, organize, and categorize your clothes and shoes by cleanliness, type, and season. Effortlessly access your best outfits, saving valuable time. Elevate your style effortlessly!</p>
+    <img class="hanger" src="{{url_for('static', filename='hanger2.png')}}" alt="hanger">
+    <a class="join2" href="/home">JOIN!</a>
   </div>
-  <div class="join">
-    <ul>
-      {% if user.is_authenticated %}
-      <li><a id="join2" href="/home">Join!</a></li>
-      {% else %}
-      <li><a id="join2" href="/login">Join!</a></li>
-      {% endif %}
+  <div class="steps">
+    <section class="box1">
+      <h2 class="text">Unearth those Garments</h2>
+    </section>
+    <section class="box2">
+      <h2 class="text">Systematize and Categorize into the system</h2>
+    </section>
+    <section class="box3">
+      <h2 class="text">Efficiency Overload: Create Stunning Outfits in a Snap!</h2>
+    </section>
+  </div>
+  <footer>
+    <h1>ClotheFit</h1>
+    <ul class="footitems">
+      <li><a href="/home" class="foot" id="foot1">About Us</a></li>
+      <li><a href="/login" class="foot">Contact Us</a></li>
     </ul>
+  </footer>
+  <div class="footer2">
+    <h2>Developed By: Mohammed Murshid</h2>
   </div>
-</section>
-<section>
-  <h1>Hello</h1>
-</section>
 </body>
 </html>
